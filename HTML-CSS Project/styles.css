@@ -1,0 +1,305 @@
+/* Default styles for all screen sizes */
+.title {
+    text-align: center;
+}
+
+
+h1 {
+    font-family: 'Cinzel', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+    color: black;
+    width: 90%;
+    max-width: 1265px; /* Limit the maximum width for larger screens */
+    padding: 7px 10px 0px;
+    background-color: #f0f0f0;
+    border: 3px solid black;
+    border-radius: 50px;
+    margin: 20px auto; /* Center the box horizontally */
+    box-shadow:  0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    top: 100px;
+   
+    
+}
+
+h2 {
+    font-family: 'Cinzel', sans-serif;
+    color: black;
+    background-color: transparent;
+    font-size: x-large;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    width: 90%;
+    max-width: 1265px; /* Limit the maximum width for larger screens */
+    padding: 15px
+    background-color: #f0f0f0;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 20px auto; /* Center the box horizontally */
+    box-shadow:  0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+   
+
+
+
+.form-box {
+    width: 100%;
+    max-width: 1265px; /* Limit the maximum width for larger screens */
+    background-color: #f9f9f9;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto; /* Center the box horizontally */
+    z-index: 2;
+    box-shadow:  0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+    margin-top: -70px;
+}
+
+.form-item {
+    margin-bottom: 15px;
+    font-family: 'Cinzel', sans-serif;
+}
+
+.form-item label {
+    display: inline-block;
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.form-item input[type="radio"] {
+    display: inline-block;
+    margin-right: 5px; /* Adjust as needed */
+    vertical-align: middle;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures that padding and border are included in width */
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px; /* Set a specific height for textarea */
+}
+
+/* Start of submit button section */
+.submit-button {
+    padding: 5px 10px; /* Adjust padding to your liking */
+    font-size: 14px; /* Adjust font size to your liking */
+    background-color: black; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Optional: Hover effect */
+.submit-button:hover {
+    background-color: black; /* Darker background color on hover */
+}
+
+/* Food allergens Check Box */
+.checkbox {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    font-family: 'Cinzel', sans-serif;
+}
+
+.form-yes {
+    margin-bottom: 20px;
+}
+
+/* Background image and other images */
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
+
+}
+
+
+
+
+
+/* Media queries for responsiveness */
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .img-thankyou,
+    .img-logo,
+    .form-thanks {
+        position: relative; /* Reset position for smaller screens */
+        width: 100%; /* Use 100% width for responsiveness */
+        max-width: 100%; /* Ensure element doesn't exceed screen width */
+        left: auto; /* Reset left position */
+        top: auto; /* Reset top position */
+        margin: 0 auto; 
+    }/* Center horizontally */
+    /* Adjustments for tablets and smaller screens */
+    .img-logo,
+    .form-thanks,
+    .info-box,
+    .form-box,
+    .img-thankyou {
+        width: 100%; /* Change width to 100% for responsiveness */
+        max-width: none;
+        left: 0; /* Reset left position */
+        top: 0; /* Reset top position */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjustments for mobile devices */
+    .img-logo,
+    .form-thanks,
+    .info-box,
+    .form-box,
+    .img-thankyou {
+        width: 100%; /* Change width to 100% for responsiveness */
+        max-width: none;
+        left: 0; /* Reset left position */
+        top: 0; /* Reset top position */
+    }
+
+    /* Additional adjustments as needed */
+}
+
+
+
+
+.img-thankyou {
+    position: relative;
+    width: 300px;
+    height: auto; 
+    left: -320px;
+    top: -70px;
+}
+.img-logo {
+    position: relative;
+    width: 300px;
+    height: auto; 
+    left: 980px;
+    top: -15px;
+    
+}
+.form-thanks {
+    position: relative;
+    width: 300px;
+    text-align: center;
+    top: 780px;
+    left: 789px;
+    font-family: 'Cinzel', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+/* Styling for heart icons */
+.heart-icon {
+    color: black;
+    font-size: 32px;
+    position: relative;
+    left: 1058px;
+    top: 60px;
+    z-index: 2;
+    width: -20px;
+    height: auto;
+    transform: scale(0.8);
+}
+
+.heart-icon2 {
+    color: black;
+    font-size: 32px;
+    position: relative;
+    left: -5px;
+    top: 3px;
+    z-index: 2;
+    width: -20px;
+    height: auto;
+    transform: scale(0.8);
+    
+}
+.user-icon {
+    color: black;
+    font-size: 32px;
+    position: relative;
+    left: 310px;
+    top: 205px;
+    z-index: 2;
+    width: -100px;
+    height: auto;
+    transform: scale(0.7);
+}
+.mail-icon {
+    color: black;
+    font-size: 32px;
+    position: relative;
+    left: 355px;
+    top: 398px;
+    z-index: 2;
+    width: -100px;
+    height: auto;
+    transform: scale(0.7);
+}
+.user-food {
+    color: black;
+    font-size: 32px;
+    position: relative;
+    left: 338px;
+    top: 745px;
+    z-index: 2;
+    width: -100px;
+    height: auto;
+    transform: scale(0.7);
+}
+
+.heart-icon,
+.heart-icon2,
+.user-icon,
+.mail-icon,
+.user-food {
+    color: black;
+    font-size: 32px;
+    position: relative;
+    z-index: 2;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .heart-icon,
+    .heart-icon2,
+    .user-icon,
+    .mail-icon,
+    .user-food {
+        left: 0; /* Adjust left positioning for iOS devices */
+        top: 0; /* Adjust top positioning for iOS devices */
+        transform: scale(0.8); /* Adjust scaling for iOS devices */
+    }
+}
+
+.label-with-icon {
+    display: inline-flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+.label-with-icon .user-icon {
+    margin-right: 5px; /* Add margin between icon and text */
+}
+
+.label-with-icon .label-text {
+    font-weight: bold; /* Optionally make the text bold */
+}
